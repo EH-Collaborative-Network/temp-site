@@ -19,11 +19,20 @@
 html{
 	background: linear-gradient(-180deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 35%, rgba(0,130,151,0.5) 100%);
 }
+hr{
+	background: #D4EAED;
+	filter: blur(2px);
+	width: 100%;
+	border: none;
+	height: 5px;
+	margin-top: 40px;
+}
 body{
 	margin: 0;
 	color: #333;
 	padding: 25px;
 	letter-spacing: 0.03em;
+	line-height: 1.5;
 	font-size: 20px;
 	background: rgb(245,245,245,0);
 	font-family: "Sharp Sans", sans-serif;
@@ -590,7 +599,7 @@ img.magnifying-glass, img.globe{
 
 }
 .funding-form{
-	border-top: 1px solid #333;
+/*	border-top: 1px solid #333;*/
 	margin: 0;
 	padding: 15px 5px;
 }
@@ -599,13 +608,15 @@ img.magnifying-glass, img.globe{
 	font-size: 20px;
 	font-family: inherit;
 	color:  #333;
-	border: 1px solid #333;
+	border: 0px solid #333;
+	background: linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 5%, rgba(0,130,151,0.1) 95%, rgba(0,130,151,0) 100%);
+;
 	padding: 2px 8px;
   margin:  10px 2px;
-	background: transparent;
+
 }
 .funding-form select:focus{
-	border: 1px solid #333;
+/*	border: 1px solid #333;*/
 	outline: none;
 }
 .faq{
