@@ -7,8 +7,18 @@ let speed = .002;
 let baseDiameter = 5;
 let pulseAmplitude = 16;
 let locations = {
-    "bard": [],
-    "berlin": []
+  "Al Quds Bard, Palestine": [],
+  "American University of Central Asia, Kyrgyzstan": [],
+  "Arizona State University, USA": [],
+  "Bard College Annandale, USA": [],
+  "Bard College Berlin, Germany": [],
+  "Birkbeck College at the University of London, UK": [],
+  "Central European University, Hungary/Austria": [],
+  "European Humanities University, Lithuania": [],
+  "Hampton University, USA": [],
+  "Recovering Voices, Smithsonian Institution, USA": [],
+  "Universidad de Los Andes, Colombia": [],
+  "University of Thessaly, Greece": [],
 }
 let sensitivityZoom = 0
 p5.prototype.orbitControl = function(sensitivityX, sensitivityY) {
