@@ -709,5 +709,8 @@ img.magnifying-glass, img.globe{
   .steering-committee ul{
   	column-count: 1;
   }
+  .interactive-map .text{
+  	display: none;
+  }
 }
 
