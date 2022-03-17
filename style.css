@@ -275,6 +275,9 @@ nav select{
 nav select:focus{
 	outline: none;
 }
+.logo-a img{
+	width:  295px;
+}
 .logo-a, .logo-a:hover{
 	background: transparent;
 	margin: 0;
@@ -282,8 +285,8 @@ nav select:focus{
 	display: block;
 }
 .logo-a{
-	left: -15px;
-	top: -15px;
+	left: -18px;
+	top: -18px;
 	position: relative;
 }
 .logo-a::after{
@@ -368,7 +371,7 @@ select.lang{
 /** Main **/
 /**********/
 main{
-	margin: 25px 55px 25px 20%;
+	margin: 25px 55px 100px 20%;
 }
 img.full{
 	width: 100%;
@@ -380,14 +383,31 @@ img.magnifying-glass, img.globe{
 	width: 20px;
 }
 /****************/
+/** One Column **/
+/****************/
+.one-column{
+	max-width: 85%;
+}
+/****************/
 /** Two Column **/
 /****************/
 .two-column{
-	margin-bottom: 25px 0;
+	margin-bottom: 25px;
+}
+.two-column h2{
+	font-size: 16px;
+  text-transform: uppercase;
 }
 .two-column, .secondary{
 	column-count: 2;
 	column-gap: 1rem;
+}
+.two-column > *:first-child{
+	margin-top: 0;
+}
+.two-column ul, .two-column ol, .two-column li,  .two-column p{
+	page-break-inside: avoid;
+	break-inside: avoid-column;
 }
 /***************/
 /** Secondary **/
@@ -483,7 +503,7 @@ img.magnifying-glass, img.globe{
 /**********/
 .intro-text{
 	max-width: 100%;
-	font-size: 30px;
+	font-size: 20px;
 }
 .intro-text p{
 	margin-top: 25px;
@@ -530,32 +550,76 @@ img.magnifying-glass, img.globe{
 .funding-wrapper{
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -25px;
+/*	margin-left: -25px;*/
+}
+.opp.hide{
+	display: none;
+}
+.opp > a{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
 }
 .opp{
+	position: relative;
 	background: linear-gradient(90deg, rgba(212,234,237,0.9) 0%, rgba(212,234,237,0.9) 5%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
-	flex-basis: calc(100% - 50px);
+	flex-basis: calc(50% - 50px);
 	padding: 20px;
 	margin: 5px;
 	font-size: 20px;
+	padding-bottom: 100px;
 }
 .opp:hover{
 	background: linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 50%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
 }
 .opp h2{
+	position: relative;
+	width: 100%;
 	font-size: 16px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	display: inline-block;
 }
+
 .opp > a{
 	float: right;
 	margin-top: 5px;
 }
+
+.opp sup{
+	vertical-align: top;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #BF0D3E;
+	text-decoration: none;
+	background: linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 5%, rgba(0,130,151,0.1) 95%, rgba(0,130,151,0) 100%);
+
+}
+.funding-form{
+	border-top: 1px solid #333;
+	margin: 0;
+	padding: 15px 5px;
+}
+.funding-form select{
+	border-radius: 0;
+	font-size: 20px;
+	font-family: inherit;
+	color:  #333;
+	border: 1px solid #333;
+	padding: 2px 8px;
+  margin:  10px 2px;
+	background: transparent;
+}
+.funding-form select:focus{
+	border: 1px solid #333;
+	outline: none;
+}
 .faq{
 	margin-top: 50px;
 	border-top: 1px;
-	column-count: 2;
-	column-gap: 1em;
+/*	column-count: 2;
+	column-gap: 1em;*/
 }
 .faq section{
 	page-break-inside: avoid;
