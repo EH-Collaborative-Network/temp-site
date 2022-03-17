@@ -22,7 +22,7 @@
 	<main>
 		<section class="primary">
 		<h1>Funding Opportunities</h1>
-		<div class="one-column">
+		<div class="">
 		The Experimental Humanities Collaborative Network promotes projects that encourage the following:<br>	
 		<ol>
 				<li>Critical reflection on the intersection of science, technology, media, art, and the humanities in response to the question: how does technology mediate what it means to be human?</li>
@@ -41,16 +41,7 @@
 					</ul>
 				</li>  </ol>
 				<p>The six numbered points above indicate the general “criteria” by which grant proposals to the EHCN will be evaluated. Not every project must satisfy all criteria, but priority will be given to proposals that take multiple criteria into consideration.</p>
-				Proposals are accepted by the below partners:
-				<ul> 
-					<li><a>American University of Central Asia</a></li>
-					<li><a>Arizona State University</a></li>
-					<li><a>Bard College Annandale</a></li>
-					<li><a>Bard College Berlin</a></li>
-					<li><a>Birkbeck College at the University of London</a></li>
-					<li><a>Central European University</a></li>
-					<li><a>European Humanities University</a></li>
-				</ul>
+			
 
 			<p>The Steering Committee reserves the right to withhold part or all of the funds awarded until project expectations are satisfied. Awards cannot be carried over. All durable equipment purchased by EHCN funds will remain the property of OSUN/EHCN.
 			</p><p>
@@ -65,14 +56,20 @@
 			<select onchange="show(this.value)">
 				<option>All</option>
 				<option>Network-wide</option>
-				<option>Institution-specific</option>
+				<option>American University of Central Asia</option>
+				<option>Arizona State University</option>
+				<option>Bard College Annandale</option>
+				<option>Bard College Berlin</option>
+				<option>Birkbeck College at the University of London</option>
+				<option>Central European University</option>
+				<option>European Humanities University</option>
 			</select>
 		</div>
 		<div class="funding-wrapper">
 		
 			
 
-			<div class="opp Institution-specific">
+			<div class="opp American-University-of-Centra-Asia">
 				
 
 				<h2>Student-led Initiatives<sup>institution-specific*</sup></h2>
@@ -90,7 +87,7 @@
 
 			</div>
 	
-			<div class="opp Institution-specific">
+			<div class="opp American-University-of-Centra-Asia">
 				
 
 				<h2>Community-facing Events<sup>institution-specific*</sup></h2>
@@ -107,7 +104,7 @@
 
 			</div>
 
-			<div class="opp Institution-specific">
+			<div class="opp American-University-of-Centra-Asia">
 				
 
 				<h2>Skills-based Workshops<sup>institution-specific*</sup></h2>
@@ -127,7 +124,7 @@
 
 
 
-			<div class="opp Institution-specific">
+			<div class="opp American-University-of-Centra-Asia">
 				
 
 				<h2>Student Research and <br>Professional Opportunities<sup>institution-specific*</sup></h2>
@@ -242,7 +239,7 @@
 function show(x){
 
   let els = document.querySelectorAll(".opp");
-
+  x = x.split(" ").join("-")
   if(x == "All"){
   for (var i = els.length - 1; i >= 0; i--) {
 
