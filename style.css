@@ -171,7 +171,11 @@ canvas{
 .interactive-map .text li{
 	margin-bottom: 5px;
 }
+
+/**************/
 /* Navigation */
+/**************/
+
 @keyframes blink {
 	0% {
 		opacity: 1;
@@ -263,6 +267,7 @@ nav select:focus{
 nav ul:nth-child(2){
 	margin-bottom: 20px;
 	margin-top: -5px;
+	font-size: 20px;
 }
 nav ul:nth-child(2) li{
 	background: rgba(0, 130,151,0);
