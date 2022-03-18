@@ -710,6 +710,15 @@ img.magnifying-glass, img.globe{
   	margin-bottom: 15px;
   	background: #333;
   }
+  #mobile-nav h2.open span:first-child{
+  	transform: rotate(45deg) translateX(8px) translateY(11px);
+  }
+  #mobile-nav h2.open span:nth-child(2){
+  	transform: rotate(-45deg) translateX(1px) translateY(-4px);
+  }
+  #mobile-nav h2.open span:last-child{
+  	display: none;
+  }
   #mobile-nav h2 span:last-child{
   	margin-bottom: 0;
   }
@@ -767,6 +776,7 @@ img.magnifying-glass, img.globe{
 		bottom: 75px;
 	  word-break: break-all;
 	}
+
 	nav .stick-to-bottom img{
 		width: 200px;
 	}
