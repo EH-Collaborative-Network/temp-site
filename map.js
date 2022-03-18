@@ -6,20 +6,20 @@ let theta = 0;
 let speed = .002;
 let baseDiameter = 5;
 let pulseAmplitude = 16;
-let locations = {
-  "Al Quds Bard, Palestine": [],
-  "American University of Central Asia, Kyrgyzstan": [],
-  "Arizona State University, USA": [],
-  "Bard College Annandale, USA": [],
-  "Bard College Berlin, Germany": [],
-  "Birkbeck College at the University of London, UK": [],
-  "Central European University, Hungary/Austria": [],
-  "European Humanities University, Lithuania": [],
-  "Hampton University, USA": [],
-  "Recovering Voices, Smithsonian Institution, USA": [],
-  "Universidad de Los Andes, Colombia": [],
-  "University of Thessaly, Greece": [],
-}
+let locations = [
+	["Al Quds Bard, Palestine", 403, 162],
+	["American University of Central Asia, Kyrgyzstan", 301.6666564941406, 131],
+	["Arizona State University, USA", 814, 154],
+	["Bard College Annandale, USA", 706, 134],
+	["Bard College Berlin, Germany", 463.6666564941406, 104],
+	["Birkbeck College at the University of London, UK", 500.6666564941406, 107],
+	["Central European University, Hungary/Austria", 463, 113],
+	["European Humanities University, Lithuania", 437.6666564941406, 103],
+	["Hampton University, USA", 713, 145],
+	["Recovering Voices, Smithsonian Institution, USA", 711.6666564941406, 139],
+	["Universidad de Los Andes, Colombia", 704, 237],
+	["University of Thessaly, Greece", 473,140]
+]
 let sensitivityZoom = 0
 p5.prototype.orbitControl = function(sensitivityX, sensitivityY) {
     this._assert3d('orbitControl');
@@ -118,16 +118,13 @@ function preload() {
     img = loadImage('assets/darkblue2.png');
 
 }
-let x = 700;
-let y = 126;
-let x1 = 700;
-let y1 = 126;
-let pairs = [
-    [700, 126]
+let x = locations[0][1];
+let y = locations[0][2];
+let count = 1;
+let pts = [
+
 ]
-let pairs1 = [
-    [700, 126]
-]
+
 
 function draw() {
     background(0);
@@ -135,38 +132,36 @@ function draw() {
     graphics.image(img, 0, 0, 1000, 500);
     graphics.fill(0, 130, 151, 200)
     graphics.noStroke()
-    graphics.ellipse(700, 126, diam, diam)
-    graphics.ellipse(488, 112, diam, diam)
-    graphics.ellipse(399, 160, diam, diam)
-    for (let i = 0; i < pairs.length; i++) {
-        graphics.ellipse(pairs[i][0], pairs[i][1], 1, 1)
-    }
-    for (let i = 0; i < pairs1.length; i++) {
-        graphics.ellipse(pairs1[i][0], pairs1[i][1], 1, 1)
-    }
-    if (frameCount % 2 == 0) {
-        if (x > 488 || y > 112) {
-            pairs.push([x, y])
-        }
-        if (x > 488) {
-            x = x - 1;
-        }
-        if (y > 112) {
-            y = y - 1;
-        }
+    for (let i = 0; i < locations.length; i++) {
+        graphics.ellipse(locations[i][1], locations[i][2], diam, diam)
     }
 
-    if (frameCount % 2 == 0) {
-        if (x1 > 399 || y1 < 160) {
-            pairs1.push([x1, y1])
-        }
-        if (x1 > 399) {
-            x1 = x1 - 1;
-        }
-        if (y1 < 160) {
-            y1 = y1 + 1;
-        }
-
+    if(count < locations.length){
+	   if (frameCount % 2 == 0) {
+	   	    let d = dist(locations[count][1], locations[count][2], locations[count-1][1], locations[count-1][2])
+	   	    let rateX = Math.abs(locations[count][1] - locations[count-1][1])/d
+	   	    let rateY = Math.abs(locations[count][2] - locations[count-1][2])/d
+		   	if(dist(x,y,locations[count][1], locations[count][2]) < 5){
+		   		count = count + 1;
+		   	}else{
+		        if (x > locations[count][1]) {
+		            x = x - rateX;
+		        }
+		        if (y > locations[count][2]) {
+		            y = y - rateY;
+		        }
+		        if (x < locations[count][1]) {
+		            x = x + rateX;
+		        }
+		        if (y < locations[count][2]) {
+		            y = y + rateY;
+		        }
+		        pts.push([x,y])
+	        }
+	    }
+	}
+ 	for (let i = 0; i < pts.length; i++) {
+        graphics.ellipse(pts[i][0], pts[i][1], 1, 1)
     }
     noStroke();
     texture(graphics);
