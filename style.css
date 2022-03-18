@@ -616,6 +616,11 @@ img.magnifying-glass, img.globe{
 /*	border-top: 1px solid #333;*/
 	margin: 0;
 	padding: 15px 5px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	background: linear-gradient(0deg, transparent 0%,#f5f5f5 10%, #f5f5f5 99% )
 }
 .funding-form select{
 	border-radius: 0;
@@ -672,13 +677,14 @@ img.magnifying-glass, img.globe{
   	justify-content: space-between;
   	align-content: space-between;
   	top: 0;
-  	background: rgba(245,245,245,0.5);
+  	background: rgba(245,245,245,0.95);
   	left: 0;
   	width: 100%;
   	z-index: 9;
   }
   #mobile-nav h2{
   	margin: 15px;
+  	margin-bottom: 0;
   }
 
   #mobile-nav h2 span{
@@ -688,13 +694,17 @@ img.magnifying-glass, img.globe{
   	margin-bottom: 15px;
   	background: #333;
   }
+  #mobile-nav h2 span:last-child{
+  	margin-bottom: 0;
+  }
   #mobile-nav .logo-a{
   	top: 0;
   	left: 0;
   }
   #mobile-nav .logo-a img{
-  	width:  200px;
+  	width:  185px;
   }
+
   nav .logo-a{
   	display: none;
   }
@@ -718,14 +728,44 @@ img.magnifying-glass, img.globe{
 		margin-bottom:75px;
 	}
 	nav{
-		width: 100%;
+		z-index: 8;
+		width: calc(100% - 30px);
+		padding: 10px 15px;
+		transition: 0.1s;
 		transform: translateY(-100%);
+	}
+	nav .logo-a{
+		display: none;
+	}
+	nav ul:nth-child(2){
+		margin-top: 100px;
+		font-size: 24px;
+	}
+	nav li{
+		max-width: 100%;
+	}
+	nav .stick-to-bottom li:nth-child(2) br{
+		display: none;
+	}
+	nav .stick-to-bottom img{
+		width: 200px;
+	}
+	nav.open{
+		background: rgba(245,245,245,0.95);
+		transform: translateY(0);
 	}
 	.list-inline{
 		width:  130%;
 	}
   .funding-form select{
   	font-size: 16px;
+  }
+
+  .funding-form{
+  	top: 60px;
+    width: calc(100vw - 30px);
+    padding: 15px;
+    margin-left: -10px;
   }
 
 	.opp{
