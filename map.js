@@ -193,9 +193,11 @@ function draw() {
 function windowResized() {
 	if(window.innerWidth <= 768){
   		resizeCanvas((window.innerWidth / 100 * 100 - 20), (window.innerHeight / 100 * 72));
+  		    camera(0, 0, 200 + sin(frameCount * 0.01) * 5, 0, 0, 0, 0, 1, 0);
 
 	}else{
   		resizeCanvas((window.innerWidth / 100 * 82 - 100), (window.innerHeight / 100 * 72));
+  		    camera(0, 0, 200 + sin(frameCount * 0.01) * 5, 0, 0, 0, 0, 1, 0);
 
 	}
 }
