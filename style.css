@@ -434,7 +434,7 @@ img.magnifying-glass, img.globe{
 	border-radius: 2px;
 	background: rgb(245,245,245,0);
 }
-.secondary a, .partners a, .opp > a{
+.secondary a, .partners a,.steering-committee a, .opp > a{
 	color: #333;
 	background: rgb(245,245,245, 0);
 	position: relative;
@@ -528,7 +528,9 @@ img.magnifying-glass, img.globe{
 	max-width: 800px;
 	margin-top: 50px;
 }
-
+.steering-committee a{
+	display: inline-block;
+}
 .steering-committee ul{
 	list-style: none;
 	margin-top: 10px;
