@@ -447,10 +447,10 @@ img.magnifying-glass, img.globe{
 	border-radius: 0px;
 	text-decoration: none;
 }
-.secondary a *, .partners a *, .opp > a *{
+.secondary a *, .partners a *,.steering-committee a *, .opp > a *{
 	text-decoration: none;
 }
-.secondary a::after, .partners a::after, .opp > a::after{
+.secondary a::after, .partners a::after,.steering-committee a::after, .opp > a::after{
 	position: absolute;
 	top: 0;
 	z-index: -1;
@@ -463,7 +463,7 @@ img.magnifying-glass, img.globe{
 	opacity: 0;
 	transition: 0.5s;
 }
-.secondary a:hover::after, .partners a:hover::after,.opp > a:hover::after{
+.secondary a:hover::after,.steering-committee a:hover::after, .partners a:hover::after,.opp > a:hover::after{
 	opacity: 1;
 	width: 100%
 }
