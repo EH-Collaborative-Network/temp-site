@@ -796,6 +796,9 @@ img.magnifying-glass, img.globe{
 		font-size: 16px;
 		flex-basis:  calc(100% - 50px);
 	}
+	.intro-text{
+		font-size: 18px;
+	}
 	.two-column{
   	column-count: 1;
   }
