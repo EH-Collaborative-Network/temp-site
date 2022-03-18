@@ -622,7 +622,7 @@ img.magnifying-glass, img.globe{
 	left: 0;
 	margin-left: -75px;
 	width: calc(80vw - 102px);
-	z-index: 8;
+	z-index: 7;
 	background: linear-gradient(0deg, transparent 0%,rgba(245, 245, 245, 0.5) 10%, rgba(245, 245, 245, 0.5) 99% )
 
 }
