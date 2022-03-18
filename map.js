@@ -101,8 +101,12 @@ let positions = [];
 let graphics;
 
 function setup() {
-
-    let c = createCanvas((window.innerWidth / 100 * 82 - 100), (window.innerHeight / 100 * 72), WEBGL); 
+	let c;
+    if(window.innerWidth <= 768){
+     c = createCanvas((window.innerWidth / 100 * 100 - 20), (window.innerHeight / 100 * 72), WEBGL); 
+    }else{
+     c = createCanvas((window.innerWidth / 100 * 82 - 100), (window.innerHeight / 100 * 72), WEBGL); 
+    }
     c.parent(el)
     camera(0, 0, 200 + sin(frameCount * 0.01) * 5, 0, 0, 0, 0, 1, 0);
     graphics = createGraphics(1000, 500);
@@ -187,5 +191,11 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas((window.innerWidth / 100 * 82 - 100), (window.innerHeight / 100 * 72));
+	if(window.innerWidth <= 768){
+  		resizeCanvas((window.innerWidth / 100 * 100 - 20), (window.innerHeight / 100 * 72));
+
+	}else{
+  		resizeCanvas((window.innerWidth / 100 * 82 - 100), (window.innerHeight / 100 * 72));
+
+	}
 }
