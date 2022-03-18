@@ -560,7 +560,12 @@ img.magnifying-glass, img.globe{
 /*	margin-left: -25px;*/
 }
 .opp.hide{
-	display: none;
+/*	display: none;*/
+	height: 0;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
 }
 .opp > a{
 	position: absolute;
@@ -568,6 +573,7 @@ img.magnifying-glass, img.globe{
 	bottom: 20px;
 }
 .opp{
+	transition: 0.2s;
 	position: relative;
 	background: linear-gradient(90deg, rgba(212,234,237,0.9) 0%, rgba(212,234,237,0.9) 5%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
 	flex-basis: calc(50% - 50px);
