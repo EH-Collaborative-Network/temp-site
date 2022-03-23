@@ -827,6 +827,7 @@ img.magnifying-glass, img.globe{
 	}
 	.stick-to-bottom {
 		bottom: 75px;
+		padding-right: 15px;
 	  word-break: break-all;
 	}
 
