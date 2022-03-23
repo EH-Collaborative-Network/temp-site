@@ -682,7 +682,7 @@ img.magnifying-glass, img.globe{
 	background:  -ms-linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 5%, rgba(0,130,151,0.1) 95%, rgba(0,130,151,0) 100%);
 	background: -moz-linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 5%, rgba(0,130,151,0.1) 95%, rgba(0,130,151,0) 100%);
 	padding: 2px 8px;
-	-webkit-appearance: caret;
+	-webkit-appearance: menulist;
   margin:  10px 2px;
 
 }
