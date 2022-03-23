@@ -300,7 +300,7 @@ nav select:focus{
 	outline: none;
 }
 .logo-a img{
-	width:  295px;
+	width:  190px;
 }
 .logo-a, .logo-a:hover{
 	background: transparent;
@@ -309,8 +309,8 @@ nav select:focus{
 	display: block;
 }
 .logo-a{
-	left: -18px;
-	top: -18px;
+	left: -10px;
+	top: -10px;
 	position: relative;
 }
 .logo-a::after{
@@ -770,11 +770,11 @@ img.magnifying-glass, img.globe{
   	margin-bottom: 0;
   }
   #mobile-nav .logo-a{
-  	top: 0;
-  	left: 0;
+  	top: 5px;
+  	left: 5px;
   }
   #mobile-nav .logo-a img{
-  	width:  185px;
+  	width:  140px;
   }
 
   nav .logo-a{
