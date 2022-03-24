@@ -48,9 +48,13 @@
 			
 		</div>
 	<!-- 	<hr> -->
+	<div class="tab-wrapper">
+	<button id="network-wide-button" onClick="showNetwork()"><span>Network-wide Opportunities</span></button>
+	<button id="institution-specific-button" class="disabled" onClick="showInstitution()"><span>Institution-specific Opportunities</span></button>
+	</div>
 	<div class="funding-opportunities-wrapper">
-	<section class="funding">
-		<h2>Network-wide Opportunities:</h2>
+
+	<section class="funding network">
 		<div class="funding-wrapper network-wide-wrapper">
 					<!-- NETWORK WIDE -->
 
@@ -63,7 +67,7 @@
 					</p>
 					<em>(up to $5000 per participating EHCN member)</em>
 				</div> 
-
+				<br><br>
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfv6Y5NzN1j4Frd8FisWZnrSZNbQL6Rn7mUmNH3sh0Fwp8TLQ/viewform">Apply here→ </a>
 
 			</div>
@@ -81,7 +85,7 @@
 					</p>
 					<em>(up to $2500 per participating EHCN member)</em>
 				</div> 
-
+				<br><br>
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfv6Y5NzN1j4Frd8FisWZnrSZNbQL6Rn7mUmNH3sh0Fwp8TLQ/viewform">Apply here→ </a>
 
 			</div>
@@ -98,40 +102,27 @@
 					</p>
 					<em>(up to $1000 per participating EHCN member)</em>
 				</div> 
-
+				<br><br>
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfv6Y5NzN1j4Frd8FisWZnrSZNbQL6Rn7mUmNH3sh0Fwp8TLQ/viewform">Apply here→ </a>
 
 			</div>
 		</div>
 	</section>
-	<section class="funding">
-		<h2>Institution-specific Opportunities:</h2>
+	<section class="funding institution">
+		
 
 
-		<div class="funding-form">
-			Select your institution:
-			<select onchange="show(this.value)">
-				<option>American University of Central Asia</option>
-				<option>Arizona State University</option>
-				<option>Bard College Annandale</option>
-				<option>Bard College Berlin</option>
-				<option>Birkbeck College at the University of London</option>
-				<option>Central European University</option>
-				<option>European Humanities University</option>
-				<option>All</option>
-			</select>
-			<div id="arrow"></div>
-		</div>
+		
 		<div class="funding-wrapper institution-specific">
 
 
 			<!-- INSTITUTION SPECIFIC -->
 			
 
-			<div class="opp American-University-of-Central-Asia hide">
+			<div class="opp institution-specific hide">
 				
 
-				<h2><sup>* American University of Central Asia *</sup>Student-led Initiatives</h2>
+				<h2><sup>* Institution-specific *</sup>Student-led Initiatives</h2>
 
 				<div class="inner">
 					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
@@ -141,15 +132,31 @@
 					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
 					<em>Applicants may request up to $500 for their initiative.</em>
 
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Apply here→ </a>
+				</div> <br><br>
+				<div class="funding-form">
+					Select your institution:
+					<select onchange="show(this.value+'-initiatives')">
+						<option>American University of Central Asia</option>
+						<option>Arizona State University</option>
+						<option>Bard College Annandale</option>
+						<option>Bard College Berlin</option>
+						<option>Birkbeck College at the University of London</option>
+						<option>Central European University</option>
+						<option>European Humanities University</option>
+						
+					</select>
+					<div id="arrow"></div>
+				</div>
+				<a class="apply-link American-University-of-Central-Asia-initiatives" href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
+
+				<a class="apply-link hide Arizona-State-University-initiatives " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for Arizona State University→ </a>
 
 			</div>
 	
-			<div class="opp American-University-of-Central-Asia hide">
+			<div class="opp Institution-specific hide">
 				
 
-				<h2><sup>* American University of Central Asia *</sup>Community-facing Events</h2>
+				<h2><sup>* Institution-specific *</sup>Community-facing Events</h2>
 
 				<div class="inner">
 					 
@@ -158,15 +165,31 @@
 					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
 					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
 
+				</div><br><br>
+				<div class="funding-form">
+					Select your institution:
+					<select onchange="show(this.value+'-events')">
+						<option>American University of Central Asia</option>
+						<option>Arizona State University</option>
+						<option>Bard College Annandale</option>
+						<option>Bard College Berlin</option>
+						<option>Birkbeck College at the University of London</option>
+						<option>Central European University</option>
+						<option>European Humanities University</option>
+						
+					</select>
+					<div id="arrow"></div>
 				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Apply here→ </a>
+				<a class="apply-link American-University-of-Central-Asia-events " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
+
+				<a class="apply-link hide Arizona-State-University-events " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for Arizona State University→ </a>
 
 			</div>
 
-			<div class="opp American-University-of-Central-Asia hide">
+			<div class="opp institution-specific hide">
 				
 
-				<h2><sup>* American University of Central Asia *</sup>Skills-based Workshops</h2>
+				<h2><sup>* Institution-specific *</sup>Skills-based Workshops</h2>
 
 				<div class="inner">
 					 
@@ -176,17 +199,33 @@
 					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
 					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
 
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Apply here→ </a>
+				</div> <br><br>
+				<div class="funding-form">
+					Select your institution:
+					<select onchange="show(this.value+'-skills')">
+						<option>American University of Central Asia</option>
+						<option>Arizona State University</option>
+						<option>Bard College Annandale</option>
+						<option>Bard College Berlin</option>
+						<option>Birkbeck College at the University of London</option>
+						<option>Central European University</option>
+						<option>European Humanities University</option>
+						
+					</select>
+					<div id="arrow"></div>
+				</div>
+				<a class="apply-link American-University-of-Central-Asia-skills " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
+
+				<a class="apply-link hide Arizona-State-University-skills " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for Arizona State University→ </a>
 
 			</div>
 
 
 
-			<div class="opp American-University-of-Central-Asia hide">
+			<div class="opp institution-specific hide">
 				
 
-				<h2><sup>* American University of Central Asia *</sup>Student Research and Professional Opportunities</h2>
+				<h2><sup>* Institution-specific *</sup>Student Research and Professional Opportunities</h2>
 
 				<div class="inner">
 					 
@@ -197,472 +236,31 @@
 					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
 					<p><em>Applicants may request up to $3000 per proposal. </em></p>
 
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Apply here→ </a>
+				</div> <br><br>
+				<div class="funding-form">
+					Select your institution:
+					<select onchange="show(this.value+'-research')">
+						<option>American University of Central Asia</option>
+						<option>Arizona State University</option>
+						<option>Bard College Annandale</option>
+						<option>Bard College Berlin</option>
+						<option>Birkbeck College at the University of London</option>
+						<option>Central European University</option>
+						<option>European Humanities University</option>
+						
+					</select>
+					<div id="arrow"></div>
+				</div>
+				<a class="apply-link American-University-of-Central-Asia-research " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
+
+				<a class="apply-link hide Arizona-State-University-research " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for Arizona State University→ </a>
 
 			</div>
-
-
-			<div class="opp Arizona-State-University hide">
-				
-
-				<h2><sup>* Arizona State University *</sup>Student-led Initiatives</h2>
-
-				<div class="inner">
-					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
-					<p>
-					Funds may be used for activities like starting student-groups interested in media or technology, interdisciplinary art projects, reading groups, or digital student publications/content creation. Students applying for this grant must identify a faculty member at Bard who can help them develop the project and mentor them throughout its execution.</p>
-					<p>
-					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<em>Applicants may request up to $500 for their initiative.</em>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Apply here→ </a>
-
-			</div>
-	
-			<div class="opp Arizona-State-University hide">
-				
-
-				<h2><sup>* Arizona State University *</sup>Community-facing Events</h2>
-
-				<div class="inner">
-					 
-					<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
-					Funds may be used for honorarium / stipend, material costs, student labor costs, food, rental space, publicity, special hardware and software needs, licensing or other streaming costs. No funds may be used for alcohol. Faculty, staff, and students are eligible to submit funding proposals for consideration on a rolling basis; you need not be EH-affiliated to apply. Applicants may apply alone or in collaboration with one another. All events must enrich the Experimental Humanities concentration for students and/or faculty at Bard’s Annandale campus and be open to the public.</p>
-					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Apply here→ </a>
-
-			</div>
-
-			<div class="opp Arizona-State-University hide">
-				
-
-				<h2><sup>* Arizona State University *</sup>Skills-based Workshops</h2>
-
-				<div class="inner">
-					 
-					<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
-					<p>
-					Funds may be used for workshop leader stipends, material costs, student labor costs, publicity, licensing or other streaming costs, special hardware and software needs. Faculty, staff, and students are eligible to submit applications on a rolling basis. You need not be EH-affiliated to apply; however, the funding must go toward the promotion and discussion of the EH model, experiences, and discoveries.
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
-					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Apply here→ </a>
-
-			</div>
-
-
-
-			<div class="opp Arizona-State-University hide">
-				
-
-				<h2><sup>* Arizona State University *</sup>Student Research and Professional Opportunities</h2>
-
-				<div class="inner">
-					 
-					<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
-					<p>
-					For example, funds may be used to help fund materials for a reading group, a topic-based club (video games, podcasting, surveillance), or a collaborative research project. They may also be used to help support a student who wishes to travel from one EHCN institution to a partner institution under the mentorship of a faculty member/adviser in order to complete research related to the Experimental Humanities. 
-					</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $3000 per proposal. </em></p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Apply here→ </a>
-
-			</div>
-
-
-			<div class="opp Bard-College-Annandale hide">
-				
-
-				<h2><sup>* Bard College Annandale *</sup>Student-led Initiatives</h2>
-
-				<div class="inner">
-					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
-					<p>
-					Funds may be used for activities like starting student-groups interested in media or technology, interdisciplinary art projects, reading groups, or digital student publications/content creation. Students applying for this grant must identify a faculty member at Bard who can help them develop the project and mentor them throughout its execution.</p>
-					<p>
-					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<em>Applicants may request up to $500 for their initiative.</em>
-
-				</div> 
-				<a href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Apply here→ </a>
-
-			</div>
-	
-			<div class="opp Bard-College-Annandale hide">
-				
-
-				<h2><sup>* Bard College Annandale *</sup>Community-facing Events</h2>
-
-				<div class="inner">
-					 
-					<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
-					Funds may be used for honorarium / stipend, material costs, student labor costs, food, rental space, publicity, special hardware and software needs, licensing or other streaming costs. No funds may be used for alcohol. Faculty, staff, and students are eligible to submit funding proposals for consideration on a rolling basis; you need not be EH-affiliated to apply. Applicants may apply alone or in collaboration with one another. All events must enrich the Experimental Humanities concentration for students and/or faculty at Bard’s Annandale campus and be open to the public.</p>
-					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
-
-				</div> 
-				<a href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Apply here→ </a>
-
-			</div>
-
-			<div class="opp Bard-College-Annandale hide">
-				
-
-				<h2><sup>* Bard College Annandale *</sup>Skills-based Workshops</h2>
-
-				<div class="inner">
-					 
-					<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
-					<p>
-					Funds may be used for workshop leader stipends, material costs, student labor costs, publicity, licensing or other streaming costs, special hardware and software needs. Faculty, staff, and students are eligible to submit applications on a rolling basis. You need not be EH-affiliated to apply; however, the funding must go toward the promotion and discussion of the EH model, experiences, and discoveries.
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
-					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
-
-				</div> 
-				<a href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Apply here→ </a>
-
-			</div>
-
-
-
-			<div class="opp Bard-College-Annandale hide">
-				
-
-				<h2><sup>* Bard College Annandale *</sup>Student Research and Professional Opportunities</h2>
-
-				<div class="inner">
-					 
-					<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
-					<p>
-					For example, funds may be used to help fund materials for a reading group, a topic-based club (video games, podcasting, surveillance), or a collaborative research project. They may also be used to help support a student who wishes to travel from one EHCN institution to a partner institution under the mentorship of a faculty member/adviser in order to complete research related to the Experimental Humanities. 
-					</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $3000 per proposal. </em></p>
-
-				</div> 
-				<a href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Apply here→ </a>
-
-			</div>
-
-
-
-						<div class="opp Bard-College-Berlin hide">
-				
-
-				<h2><sup>* Bard College Berlin *</sup>Student-led Initiatives</h2>
-
-				<div class="inner">
-					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
-					<p>
-					Funds may be used for activities like starting student-groups interested in media or technology, interdisciplinary art projects, reading groups, or digital student publications/content creation. Students applying for this grant must identify a faculty member at Bard who can help them develop the project and mentor them throughout its execution.</p>
-					<p>
-					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<em>Applicants may request up to $500 for their initiative.</em>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScAw1elkV5Y3h6DDKqoAhR4OVzg2YUMEk-ZHfp00aMRanoUIQ/viewform">Apply here→ </a>
-
-			</div>
-	
-			<div class="opp Bard-College-Berlin hide">
-				
-
-				<h2><sup>* Bard College Berlin *</sup>Community-facing Events</h2>
-
-				<div class="inner">
-					 
-					<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
-					Funds may be used for honorarium / stipend, material costs, student labor costs, food, rental space, publicity, special hardware and software needs, licensing or other streaming costs. No funds may be used for alcohol. Faculty, staff, and students are eligible to submit funding proposals for consideration on a rolling basis; you need not be EH-affiliated to apply. Applicants may apply alone or in collaboration with one another. All events must enrich the Experimental Humanities concentration for students and/or faculty at Bard’s Annandale campus and be open to the public.</p>
-					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScAw1elkV5Y3h6DDKqoAhR4OVzg2YUMEk-ZHfp00aMRanoUIQ/viewform">Apply here→ </a>
-
-			</div>
-
-			<div class="opp Bard-College-Berlin hide">
-				
-
-				<h2><sup>* Bard College Berlin *</sup>Skills-based Workshops</h2>
-
-				<div class="inner">
-					 
-					<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
-					<p>
-					Funds may be used for workshop leader stipends, material costs, student labor costs, publicity, licensing or other streaming costs, special hardware and software needs. Faculty, staff, and students are eligible to submit applications on a rolling basis. You need not be EH-affiliated to apply; however, the funding must go toward the promotion and discussion of the EH model, experiences, and discoveries.
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
-					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScAw1elkV5Y3h6DDKqoAhR4OVzg2YUMEk-ZHfp00aMRanoUIQ/viewform">Apply here→ </a>
-
-			</div>
-
-
-
-			<div class="opp Bard-College-Berlin hide">
-				
-
-				<h2><sup>* Bard College Berlin *</sup>Student Research and <br>Professional Opportunities</h2>
-
-				<div class="inner">
-					 
-					<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
-					<p>
-					For example, funds may be used to help fund materials for a reading group, a topic-based club (video games, podcasting, surveillance), or a collaborative research project. They may also be used to help support a student who wishes to travel from one EHCN institution to a partner institution under the mentorship of a faculty member/adviser in order to complete research related to the Experimental Humanities. 
-					</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $3000 per proposal. </em></p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScAw1elkV5Y3h6DDKqoAhR4OVzg2YUMEk-ZHfp00aMRanoUIQ/viewform">Apply here→ </a>
-
-			</div>
-
-			<div class="opp Birkbeck-College-at-the-University-of-London hide">
-				
-
-				<h2><sup>* Birkbeck College at the University of London *</sup>Student-led Initiatives</h2>
-
-				<div class="inner">
-					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
-					<p>
-					Funds may be used for activities like starting student-groups interested in media or technology, interdisciplinary art projects, reading groups, or digital student publications/content creation. Students applying for this grant must identify a faculty member at Bard who can help them develop the project and mentor them throughout its execution.</p>
-					<p>
-					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<em>Applicants may request up to $500 for their initiative.</em>
-
-				</div> 
-				<a href="https://forms.gle/5UBTmBsMnjQMGzdx8">Apply here→ </a>
-
-			</div>
-	
-			<div class="opp Birkbeck-College-at-the-University-of-London hide">
-				
-
-				<h2><sup>* Birkbeck College at the University of London *</sup>Community-facing Events</h2>
-
-				<div class="inner">
-					 
-					<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
-					Funds may be used for honorarium / stipend, material costs, student labor costs, food, rental space, publicity, special hardware and software needs, licensing or other streaming costs. No funds may be used for alcohol. Faculty, staff, and students are eligible to submit funding proposals for consideration on a rolling basis; you need not be EH-affiliated to apply. Applicants may apply alone or in collaboration with one another. All events must enrich the Experimental Humanities concentration for students and/or faculty at Bard’s Annandale campus and be open to the public.</p>
-					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
-
-				</div> 
-				<a href="https://forms.gle/5UBTmBsMnjQMGzdx8">Apply here→ </a>
-
-			</div>
-
-			<div class="opp Birkbeck-College-at-the-University-of-London hide">
-				
-
-				<h2><sup>* Birkbeck College at the University of London *</sup>Skills-based Workshops</h2>
-
-				<div class="inner">
-					 
-					<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
-					<p>
-					Funds may be used for workshop leader stipends, material costs, student labor costs, publicity, licensing or other streaming costs, special hardware and software needs. Faculty, staff, and students are eligible to submit applications on a rolling basis. You need not be EH-affiliated to apply; however, the funding must go toward the promotion and discussion of the EH model, experiences, and discoveries.
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
-					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
-
-				</div> 
-				<a href="https://forms.gle/5UBTmBsMnjQMGzdx8">Apply here→ </a>
-
-			</div>
-
-
-
-			<div class="opp Birkbeck-College-at-the-University-of-London hide">
-				
-
-				<h2><sup>* Birkbeck College at the University of London *</sup>Student Research and Professional Opportunities</h2>
-
-				<div class="inner">
-					 
-					<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
-					<p>
-					For example, funds may be used to help fund materials for a reading group, a topic-based club (video games, podcasting, surveillance), or a collaborative research project. They may also be used to help support a student who wishes to travel from one EHCN institution to a partner institution under the mentorship of a faculty member/adviser in order to complete research related to the Experimental Humanities. 
-					</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $3000 per proposal. </em></p>
-
-				</div> 
-				<a href="https://forms.gle/5UBTmBsMnjQMGzdx8">Apply here→ </a>
-
-			</div>
-
-						<div class="opp Central-European-University hide">
-				
-
-				<h2><sup>* Central European University *</sup>Student-led Initiatives</h2>
-
-				<div class="inner">
-					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
-					<p>
-					Funds may be used for activities like starting student-groups interested in media or technology, interdisciplinary art projects, reading groups, or digital student publications/content creation. Students applying for this grant must identify a faculty member at Bard who can help them develop the project and mentor them throughout its execution.</p>
-					<p>
-					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<em>Applicants may request up to $500 for their initiative.</em>
-
-				</div> 
-				<a href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Apply here→ </a>
-
-			</div>
-	
-			<div class="opp Central-European-University hide">
-				
-
-				<h2><sup>* Central European University *</sup>Community-facing Events</h2>
-
-				<div class="inner">
-					 
-					<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
-					Funds may be used for honorarium / stipend, material costs, student labor costs, food, rental space, publicity, special hardware and software needs, licensing or other streaming costs. No funds may be used for alcohol. Faculty, staff, and students are eligible to submit funding proposals for consideration on a rolling basis; you need not be EH-affiliated to apply. Applicants may apply alone or in collaboration with one another. All events must enrich the Experimental Humanities concentration for students and/or faculty at Bard’s Annandale campus and be open to the public.</p>
-					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
-
-				</div> 
-				<a href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Apply here→ </a>
-
-			</div>
-
-			<div class="opp Central-European-University hide">
-				
-
-				<h2><sup>* Central European University *</sup>Skills-based Workshops</h2>
-
-				<div class="inner">
-					 
-					<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
-					<p>
-					Funds may be used for workshop leader stipends, material costs, student labor costs, publicity, licensing or other streaming costs, special hardware and software needs. Faculty, staff, and students are eligible to submit applications on a rolling basis. You need not be EH-affiliated to apply; however, the funding must go toward the promotion and discussion of the EH model, experiences, and discoveries.
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
-					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
-
-				</div> 
-				<a href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Apply here→ </a>
-
-			</div>
-
-
-
-			<div class="opp Central-European-University hide">
-				
-
-				<h2><sup>* Central European University *</sup>Student Research and Professional Opportunities</h2>
-
-				<div class="inner">
-					 
-					<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
-					<p>
-					For example, funds may be used to help fund materials for a reading group, a topic-based club (video games, podcasting, surveillance), or a collaborative research project. They may also be used to help support a student who wishes to travel from one EHCN institution to a partner institution under the mentorship of a faculty member/adviser in order to complete research related to the Experimental Humanities. 
-					</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $3000 per proposal. </em></p>
-
-				</div> 
-				<a href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Apply here→ </a>
-
-			</div>
-
-
-			<div class="opp European-Humanities-University hide">
-				
-
-				<h2><sup>* European Humanities University *</sup>Student-led Initiative</h2>
-
-				<div class="inner">
-					<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found here.</p>
-					<p>
-					Funds may be used for activities like starting student-groups interested in media or technology, interdisciplinary art projects, reading groups, or digital student publications/content creation. Students applying for this grant must identify a faculty member at Bard who can help them develop the project and mentor them throughout its execution.</p>
-					<p>
-					Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<em>Applicants may request up to $500 for their initiative.</em>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Apply here→ </a>
-
-			</div>
-	
-			<div class="opp European-Humanities-University hide">
-				
-
-				<h2><sup>* European Humanities University *</sup>Community-facing Events</h2>
-
-				<div class="inner">
-					 
-					<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
-					Funds may be used for honorarium / stipend, material costs, student labor costs, food, rental space, publicity, special hardware and software needs, licensing or other streaming costs. No funds may be used for alcohol. Faculty, staff, and students are eligible to submit funding proposals for consideration on a rolling basis; you need not be EH-affiliated to apply. Applicants may apply alone or in collaboration with one another. All events must enrich the Experimental Humanities concentration for students and/or faculty at Bard’s Annandale campus and be open to the public.</p>
-					<p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $2000 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Apply here→ </a>
-
-			</div>
-
-			<div class="opp European-Humanities-University hide">
-				
-
-				<h2><sup>* European Humanities University *</sup>Skills-based Workshops</h2>
-
-				<div class="inner">
-					 
-					<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
-					<p>
-					Funds may be used for workshop leader stipends, material costs, student labor costs, publicity, licensing or other streaming costs, special hardware and software needs. Faculty, staff, and students are eligible to submit applications on a rolling basis. You need not be EH-affiliated to apply; however, the funding must go toward the promotion and discussion of the EH model, experiences, and discoveries.
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.
-					</p><p><em>Applicants may request up to $1500 per proposal.</em> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Apply here→ </a>
-
-			</div>
-
-
-
-			<div class="opp European-Humanities-University hide">
-				
-
-				<h2><sup>* European Humanities University *</sup>Student Research and Professional Opportunities</h2>
-
-				<div class="inner">
-					 
-					<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
-					<p>
-					For example, funds may be used to help fund materials for a reading group, a topic-based club (video games, podcasting, surveillance), or a collaborative research project. They may also be used to help support a student who wishes to travel from one EHCN institution to a partner institution under the mentorship of a faculty member/adviser in order to complete research related to the Experimental Humanities. 
-					</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
-					</p><p>Applicants approved for a grant must submit a written report with relevant project documentation upon completion.</p>
-					<p><em>Applicants may request up to $3000 per proposal. </em></p>
-
-				</div> 
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Apply here→ </a>
-
-			</div>
-
-
-
-
-
-
-
-
 
 		</div>
 		</section>
 	</div>
-		</section>
+</section>
 		
 
 	</main>
@@ -693,19 +291,36 @@
   </div>
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript">
-  	
+  	function showNetwork(){
+  		document.getElementById("institution-specific-button").classList.add("disabled")
+  		document.getElementById("network-wide-button").classList.remove("disabled")
+  		let networks = document.querySelectorAll(".network .opp");
+  		let institutions = document.querySelectorAll(".institution .opp");
+  		for (var i = networks.length - 1; i >= 0; i--) {
+  			networks[i].classList.remove("hide")
+  		}
+  		for (var i = institutions.length - 1; i >= 0; i--) {
+  			institutions[i].classList.add("hide")
+  		}
+  	}
+  	function showInstitution(){
+  		document.getElementById("institution-specific-button").classList.remove("disabled")
+  		document.getElementById("network-wide-button").classList.add("disabled")
+  		let networks = document.querySelectorAll(".network .opp");
+  		let institutions = document.querySelectorAll(".institution .opp");
+  		for (var i = networks.length - 1; i >= 0; i--) {
+  			networks[i].classList.add("hide")
+  		}
+  		for (var i = institutions.length - 1; i >= 0; i--) {
+  			institutions[i].classList.remove("hide")
+  		}
+  	}
 function show(x){
 
-  let els = document.querySelectorAll(".funding-wrapper.institution-specific .opp");
+  let els = document.querySelectorAll(".funding-wrapper.institution-specific .apply-link");
   x = x.split(" ").join("-")
   console.log(x)
-  if(x == "All"){
-  for (var i = els.length - 1; i >= 0; i--) {
 
-        els[i].classList.remove("hide")
-     
-    }
-  }else{
 
     
     for (var i = els.length - 1; i >= 0; i--) {
@@ -719,7 +334,7 @@ function show(x){
 
 
 
-  }
+  
 }
   </script>
 </body>
