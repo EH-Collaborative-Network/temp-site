@@ -662,6 +662,9 @@ img.magnifying-glass, img.globe{
 }
 #modal{
 	opacity: 0;
+	height: 0;
+	transition: 0.2s;
+	overflow: hidden;
 	pointer-events: none;
 }
 #modal.show{
@@ -679,9 +682,11 @@ img.magnifying-glass, img.globe{
 	align-content: center;
 }
 #modal.show .inner .close{
-	position: absolute;
-	top: 20px;
-	right: 20px;
+	position: sticky;
+	float: right;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
 }
 #modal.show .inner{
 	background: #D4EAED;
@@ -691,7 +696,7 @@ img.magnifying-glass, img.globe{
 	width: 50%;
 	height: 50%;
 	font-size: 16px;
-	padding-top: 50px;
+	padding-top: 10px;
 	overflow: scroll;
 	box-shadow: 0 0 5px 15px #D4EAED;
 }
@@ -943,6 +948,14 @@ section.funding{
   .interactive-map .text{
   	display: none;
   }
+  #modal.show .inner{
+		width: 95%;
+		height: 95%;
+	}
+	#modal.show .inner .close{
+		top: 5px;
+		right: 5px;
+	}
 }
   #arrow{
   	display: none !important;
