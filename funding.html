@@ -52,10 +52,12 @@
 			</div>
 			<div class="funding-opportunities-wrapper">
 
-				<section class="funding network">
+				<section aria-hidden="false"  class="funding network">
+			
 					<div class="funding-wrapper network-wide-wrapper">
+						<h1 class="visually-hidden">The Following are Network-wide Opportunities</h1>
 					<!-- NETWORK WIDE -->
-						<div class="opp Network-wide">
+						<section class="opp Network-wide">
 							<h2>PROJECT DEVELOPMENT & MATERIALS GRANTS </h2>
 							<div class="inner">	 
 								<p>Propose experimental research and artistic projects that bring local concerns, narratives, and resources to a global stage through public-facing exhibitions, publications, and archives or through new media technologies, such as podcasts, websites, and social media. Projects that feature multiple network partners working in collaboration will be prioritized. (If you have a project proposal but have not yet established a collaborative relationship throughout the EHCN, please indicate that in your application, and we will do our best to connect you with potential partners.)<br><br>
@@ -65,8 +67,8 @@
 							</div> 
 							<br><br>
 							<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfv6Y5NzN1j4Frd8FisWZnrSZNbQL6Rn7mUmNH3sh0Fwp8TLQ/viewform">Apply here→ </a>
-						</div>
-						<div class="opp Network-wide">
+						</section>
+						<section class="opp Network-wide">
 							<h2>COURSE DEVELOPMENT GRANTS </h2>
 							<div class="inner">	 
 								<p>Develop new or adapt existing Experimental Humanities (EH)-related courses that will be linked across multiple network institutions. These courses should center on topics related to the intersection of the humanities, arts, sciences, and technology, and should not just use but also critically consider digital or analog technologies and their ramifications (for example, as mediums of communication, information-sharing, and surveillance). Successful course proposals will involve at least 2 network partners and should include practice-rich modules that students from various institutions can complete, ideally in collaboration with one another.<br><br>
@@ -76,8 +78,8 @@
 							</div> 
 							<br><br>
 							<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfv6Y5NzN1j4Frd8FisWZnrSZNbQL6Rn7mUmNH3sh0Fwp8TLQ/viewform">Apply here→ </a>
-						</div>
-						<div class="opp Network-wide">
+						</section>
+						<section class="opp Network-wide">
 							<h2>TOPIC-BASED WORKING GROUPS </h2>
 							<div class="inner">	 
 								<p>Establish topic-based working groups that center on the collaborative study of technology, justice, and the human experience. Proposed working groups must include members from at least 2 network institutions and should arise out of interdisciplinary faculty, staff and/or student interests (such as Archives, Attention, Food, Migration, and Space & Politics). Working groups may be structured to yield new linked courses, published research, collaborative projects, grant proposals, and public-facing events.<br><br>
@@ -87,13 +89,14 @@
 							</div> 
 							<br><br>
 							<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfv6Y5NzN1j4Frd8FisWZnrSZNbQL6Rn7mUmNH3sh0Fwp8TLQ/viewform">Apply here→ </a>
-						</div>
+						</section>
 					</div>
 				</section>
-				<section class="funding institution">	
+				<section aria-hidden="true" tabIndex="-1" class="funding institution">	
 					<div class="funding-wrapper institution-specific">
+						<h1 class="visually-hidden">The Following are Institution-specific Opportunities</h1>
 					<!-- INSTITUTION SPECIFIC -->
-						<div class="opp institution-specific hide">
+						<section class="opp institution-specific hide">
 							<h2><sup>* Institution-specific *</sup>Student-led Initiatives</h2>
 							<div class="inner">
 								<p>These funds will support undergraduate and graduate-student led projects and initiatives focused on the intersection of the arts, sciences, and humanities. Projects might strive to bring local concerns, narratives, and resources to a global stage through new media technologies including podcasts, websites, social media, and so forth during the 2021-22 and 2022-23 academic years. An example of a previously successful student-led initiative can be found <a href='https://docs.google.com/document/d/1bcerYE7d1gMIA1Weh3nfTuohxBDdGQXwdPUklgD18U4/edit?usp=sharing'>here</a>.</p>
@@ -104,9 +107,9 @@
 								<em>Applicants may request up to $500 for their initiative.</em>
 
 							</div> <br><br>
-							<div class="funding-form">
+							<form class="funding-form" tabIndex="-1">
 								Select your institution:
-								<select onchange="show(this.value+'-initiatives')">
+								<select aria-label="select your institution to update the application link" onchange="show(this.value+'-initiatives')">
 									<option>American University of Central Asia</option>
 									<option>Arizona State University</option>
 									<option>Bard College Annandale</option>
@@ -117,7 +120,7 @@
 									
 								</select>
 								<div id="arrow"></div>
-							</div>
+							</form>
 								<a target="_blank" class="apply-link American-University-of-Central-Asia-initiatives" href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
 								<a target="_blank" class="apply-link hide Arizona-State-University-initiatives " href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Application for Arizona State University→ </a>
 								<a target="_blank" class="apply-link hide Bard-College-Annandale-initiatives " href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Application for Bard College Annandale→ </a>
@@ -125,9 +128,9 @@
 								<a target="_blank" class="apply-link hide Birkbeck-College-at-the-University-of-London-initiatives " href="https://forms.gle/5UBTmBsMnjQMGzdx8">Application for Birkbeck College at the University of London→ </a>
 								<a target="_blank" class="apply-link hide Central-European-University-initiatives " href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Application for Central European University→ </a>
 								<a target="_blank" class="apply-link hide European-Humanities-University-initiatives " href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Application for European Humanities University→ </a>
-						</div>
+						</section>
 	
-						<div class="opp Institution-specific hide">
+						<section class="opp Institution-specific hide">
 							<h2><sup>* Institution-specific *</sup>Community-facing Events</h2>
 							<div class="inner"> 
 								<p>Community-facing events are defined as events at each site centered on media, technology, and the humanities, tailored to the opportunities and circumstances at that locale and meaningfully involving students. These may include presentations by EH-related clusters, courses, and projects underway; film screenings, art exhibitions, and technical demonstrations; relevant speakers, exhibitions, or performances open to the public; and more. An example of a previously successful community-facing event can be found <a href="https://docs.google.com/document/d/1awJlXvju7iezFavtHJYkuYo-mV21K4J57PmG7rn3vFg/edit?usp=sharing" target="_blank">here</a>.</p><p>
@@ -135,9 +138,9 @@
 								<p>Eligibility: Students, faculty, staff</p>
 								<p>Applicants may request up to $2000 per proposal.</p><p>Proposals can be submitted directly or developed in consultation with the EH Steering Committee.</p>
 							</div><br><br>
-							<div class="funding-form">
+							<form class="funding-form" tabIndex="-1">
 								Select your institution:
-								<select onchange="show(this.value+'-events')">
+								<select aria-label="select your institution to update the application link" onchange="show(this.value+'-events')">
 									<option>American University of Central Asia</option>
 									<option>Arizona State University</option>
 									<option>Bard College Annandale</option>
@@ -147,7 +150,7 @@
 									<option>European Humanities University</option>
 								</select>
 								<div id="arrow"></div>
-							</div> 
+							</form> 
 							<a target="_blank" class="apply-link American-University-of-Central-Asia-events " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
 							<a target="_blank" class="apply-link hide Arizona-State-University-events " href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Application for Arizona State University→ </a>
 							<a target="_blank" class="apply-link hide Bard-College-Annandale-events " href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Application for Bard College Annandale→ </a>
@@ -155,9 +158,9 @@
 							<a target="_blank" class="apply-link hide Birkbeck-College-at-the-University-of-London-events " href="https://forms.gle/5UBTmBsMnjQMGzdx8">Application for Birkbeck College at the University of London→ </a>
 							<a target="_blank" class="apply-link hide Central-European-University-events " href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Application for Central European University→ </a>
 							<a target="_blank" class="apply-link hide European-Humanities-University-events " href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Application for European Humanities University→ </a>
-						</div>
+						</section>
 
-						<div class="opp institution-specific hide">
+						<section class="opp institution-specific hide">
 							<h2><sup>* Institution-specific *</sup>Skills-based Workshops</h2>
 							<div class="inner"> 
 								<p>Skills-based workshops are defined as practice-rich modules paired with curriculum development, collaborative research, and/or community-engaged projects. These might include workshops like DIY smartphone screen repair, Wikipedia editing in English or other languages, building websites, podcasting and sound editing, developing inclusive or interdisciplinary syllabi, creating digital and analog maps, writing interactive narratives, building virtual and augmented reality experiences, taking oral histories, and more. Workshops may be online or engaged in-person. Examples of previously successful skills-based workshops can be found <a href="https://docs.google.com/document/d/1qD08yblQbWM0FbzNoSL_Dv8xRpmrafRFSYOIM6TPYYw/edit?usp=sharing" target="_blank">here</a>.</p>
@@ -166,9 +169,9 @@
 								</p><p>Eligibility: Students, faculty, staff
 								</p><p>Applicants may request up to $1500 per proposal.</p><p> Proposals can be submitted directly or developed in consultation with the EH Steering committee.</p>
 							</div> <br><br>
-							<div class="funding-form">
+							<form class="funding-form" tabIndex="-1">
 								Select your institution:
-								<select onchange="show(this.value+'-skills')">
+								<select aria-label="select your institution to update the application link" onchange="show(this.value+'-skills')">
 									<option>American University of Central Asia</option>
 									<option>Arizona State University</option>
 									<option>Bard College Annandale</option>
@@ -179,7 +182,7 @@
 									
 								</select>
 								<div id="arrow"></div>
-							</div>
+							</form>
 							<a target="_blank" class="apply-link American-University-of-Central-Asia-skills " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
 							<a target="_blank" class="apply-link hide Arizona-State-University-skills " href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Application for Arizona State University→ </a>
 							<a target="_blank" class="apply-link hide Bard-College-Annandale-skills " href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Application for Bard College Annandale→ </a>
@@ -187,9 +190,9 @@
 							<a target="_blank" class="apply-link hide Birkbeck-College-at-the-University-of-London-skills " href="https://forms.gle/5UBTmBsMnjQMGzdx8">Application for Birkbeck College at the University of London→ </a>
 							<a target="_blank" class="apply-link hide Central-European-University-skills " href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Application for Central European University→ </a>
 							<a target="_blank" class="apply-link hide European-Humanities-University-skills " href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Application for European Humanities University→ </a>
-						</div>
+						</section>
 
-						<div class="opp institution-specific hide">
+						<section class="opp institution-specific hide">
 							<h2><sup>* Institution-specific *</sup>Student Research and Professional Opportunities</h2>
 							<div class="inner">
 								<p>These grants can be used to support opportunities that connect undergraduate and graduate students interested in the Experimental Humanities from one EHCN institution to partner institutions on the network. These may be working/reading groups consisting of students from different EHCN institutions, or research programs or creative projects that see direct collaborations between members of different EHCN institutions. </p>
@@ -198,9 +201,9 @@
 								</p><p>Funds may also be used to pay fees and travel costs associated with participating in Experimental Humanities-related programs/events at partner institutions (such as the <a href="https://www.pelionsummerlab.net/" target="_blank">Pelion Summer Lab in Thessaly, Greece</a>, the <a href="https://www.bbk.ac.uk/annual-events/london-critical-theory-summer-school" target="_blank">London Critical Theory Summer School at Birkbeck</a>, or the <a href="https://en.ehu.lt/academics/daad-go-east-summer-school/" target="_blank">EHU DAAD Summer School</a>), or to facilitate collaborations among undergraduate students and/or graduate students at partner institutions in the form of student-run conferences, symposia, podcasts, social media projects, publications, art exhibitions, etc.   
 								</p><p>Eligibility: Students</p><p>Applicants may request up to $3000 per proposal.</p>
 							</div> <br><br>
-							<div class="funding-form">
+							<form class="funding-form" tabIndex="-1">
 								Select your institution:
-								<select onchange="show(this.value+'-research')">
+								<select aria-label="select your institution to update the application link" onchange="show(this.value+'-research')">
 									<option>American University of Central Asia</option>
 									<option>Arizona State University</option>
 									<option>Bard College Annandale</option>
@@ -210,7 +213,7 @@
 									<option>European Humanities University</option>	
 								</select>
 								<div id="arrow"></div>
-							</div>
+							</form>
 							<a target="_blank" class="apply-link American-University-of-Central-Asia-research " href="https://docs.google.com/forms/d/e/1FAIpQLSclOT6Xnxu2YGOdI5zZz6H9ylICVNldxJgkZWfh3K0NbTmrcQ/viewform?usp=sf_link">Application for American University of Central Asia→ </a>
 							<a target="_blank" class="apply-link hide Arizona-State-University-research " href="https://docs.google.com/forms/d/e/1FAIpQLSeFL6-RiINUAl4QHfh7UwccjJarU94L6lAMG5ZE9h6N_csjug/viewform?usp=sf_link">Application for Arizona State University→ </a>
 							<a target="_blank" class="apply-link hide Bard-College-Annandale-research " href="https://centerforexperimentalhumanities.submittable.com/submit/210989/experimental-humanities-collaborative-network-call-for-local-proposals-2021-23">Application for Bard College Annandale→ </a>							
@@ -218,7 +221,7 @@
 							<a target="_blank" class="apply-link hide Birkbeck-College-at-the-University-of-London-research " href="https://forms.gle/5UBTmBsMnjQMGzdx8">Application for Birkbeck College at the University of London→ </a>
 							<a target="_blank" class="apply-link hide Central-European-University-research " href="https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhESswcQI-N5OilUsRlJ5sVRUM0pHUldLN0kxQVBYUVhJWk9JR0pJV0I4MC4u">Application for Central European University→ </a>
 							<a target="_blank" class="apply-link hide European-Humanities-University-research " href="https://docs.google.com/forms/d/e/1FAIpQLScNNY281U63dSxxmdvccWfyHOyNAhp1RuLcAvyaCCg7zzkivw/viewform">Application for European Humanities University→ </a>
-						</div>
+						</section>
 
 					</div>
 				</section>
@@ -263,6 +266,15 @@
   		for (var i = institutions.length - 1; i >= 0; i--) {
   			institutions[i].classList.add("hide")
   		}
+		document.querySelector(".funding.network").ariaHidden = "false"
+		document.querySelector(".funding.institution").ariaHidden = "true"
+		document.querySelector(".funding.network .funding-wrapper").tabIndex = "0"
+		document.querySelector(".funding.institution .funding-wrapper").tabIndex = "-1"
+		let forms = document.querySelectorAll(".funding-form");
+		forms.forEach(element => {
+			element.tabIndex = "-1"
+		});
+		document.querySelector(".funding.network .funding-wrapper").focus()
   	}
   	function showInstitution(){
   		document.getElementById("institution-specific-button").classList.remove("disabled")
@@ -275,6 +287,15 @@
   		for (var i = institutions.length - 1; i >= 0; i--) {
   			institutions[i].classList.remove("hide")
   		}
+		document.querySelector(".funding.network").ariaHidden = "true"
+		document.querySelector(".funding.institution").ariaHidden = "false"
+		document.querySelector(".funding.network .funding-wrapper").tabIndex = "-1"
+		let forms = document.querySelectorAll(".funding-form");
+		forms.forEach(element => {
+			element.tabIndex = "0"
+		});
+		document.querySelector(".funding.institution .funding-wrapper").tabIndex = "0"
+		document.querySelector(".funding.institution .funding-wrapper").focus()
   	}
 function show(x){
 

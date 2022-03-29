@@ -211,13 +211,16 @@ strong{
 /******************/
 /* ACCESSIBILITY */
 /*****************/
-#skip-link{
+#skip-link, .visually-hidden{
 	width:0;
 	height:0;
 	overflow: hidden;
 	opacity: 0;
 	display: inherit;
+	margin:0;
+	padding:0;
 }
+
 /************************/
 /* INTERACTIVE MAP CODE */
 /************************/
