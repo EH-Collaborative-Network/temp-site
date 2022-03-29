@@ -96,7 +96,7 @@
 					<div aria-hidden="true" tabindex="-1"  class="funding-wrapper institution-specific">
 						<h1 class="visually-hidden">The Following are Institution-specific Opportunities</h1>
 						<form class="funding-form">
-							select your institution to show the appropriate application links:
+							Select your institution to show the appropriate application links:
 							<select tabindex="-1" aria-label="select your institution to show the appropriate application links" onchange="show(this.value)">
 								<option>American University of Central Asia</option>
 								<option>Arizona State University</option>
@@ -232,13 +232,14 @@
   		}
 		document.querySelector(".funding.network").ariaHidden = "false"
 		document.querySelector(".funding.institution").ariaHidden = "true"
+		document.querySelector(".funding.institution").classList.remove("show-form");
 		document.querySelector(".funding.network .funding-wrapper").tabIndex = "0"
 		document.querySelector(".funding.institution .funding-wrapper").tabIndex = "-1"
 		let forms = document.querySelectorAll(".funding-form select");
 		forms.forEach(element => {
 			element.tabIndex = "-1"
 		});
-		document.querySelector(".funding.network .funding-wrapper").focus()
+		// document.querySelector(".funding.network .funding-wrapper").focus()
   	}
   	function showInstitution(){
   		document.getElementById("institution-specific-button").classList.remove("disabled")
@@ -253,13 +254,14 @@
   		}
 		document.querySelector(".funding.network").ariaHidden = "true"
 		document.querySelector(".funding.institution").ariaHidden = "false"
+		document.querySelector(".funding.institution").classList.add("show-form");
 		document.querySelector(".funding.network .funding-wrapper").tabIndex = "-1"
 		let forms = document.querySelectorAll(".funding-form select");
 		forms.forEach(element => {
 			element.tabIndex = "0"
 		});
 		document.querySelector(".funding.institution .funding-wrapper").tabIndex = "0"
-		document.querySelector(".funding.institution .funding-wrapper").focus()
+		// document.querySelector(".funding.institution .funding-wrapper").focus()
   	}
 function show(x){
 
