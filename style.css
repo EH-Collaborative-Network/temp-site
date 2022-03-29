@@ -711,7 +711,10 @@ button.disabled span::after{
 	margin-bottom: 20px;
 	display: inline-block;
 }
-
+.apply-link{
+	margin-right:10px;
+	margin-bottom:8px;
+}
 
 .opp sup{
 	font-size: 20px;
@@ -784,9 +787,7 @@ button.disabled span::after{
 section.funding{
 	flex-basis: 100%;
 }
-.apply-link.hide{
-	display: none;
-}
+
 .funding-form{
    display: none;
 }
@@ -795,7 +796,7 @@ section.funding{
 	color:#BF0D3E;
 /*	border-top: 1px solid #333;*/
 	margin: 0;
-	display: inline-block;
+	display: none;
 	top: 0;
 	margin-right: 15px;
 	left: 0;
