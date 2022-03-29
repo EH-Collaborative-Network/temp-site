@@ -8,22 +8,23 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="mobile-nav">
-		<a class="logo-a" href="./"><img alt="EHCN's logo which resembles the EH building on bard campus" src="assets/logo.png"/></a>
-		<h2 id='mobile-menu-trigger' onclick="showNav(this)"><span></span><span></span><span></span></h2>
-	</div>
-
-	<nav>
-		<a class="logo-a" href="./"><img alt="EHCN's logo which resembles the EH building on bard campus" src="assets/logo.png"/></a>
+	<a id="skip-link" href="#main">skip navigation and head to main content</a>
+	<nav role="navigation" id="mobile-nav">
+		<a class="logo-a" href="./"><img alt="EHCN's logo which has an abstracted 'E' in the shape of the E.H. building on Bard campus with a grey H inside of it. Alongside this, is the text Experimental Humanities Collaborative Network." src="assets/logo.png"/></a>
+		<button aria-expanded="false" role="button" aria-label="select to open or close global navigation menu" id='mobile-menu-trigger' onclick="showNav(this)"><span></span><span></span><span></span></button>
+	</nav>
+	<nav role="navigation" id="desktop-nav">
+		<a class="logo-a" href="./"><img alt="EHCN's logo which has an abstracted 'E' in the shape of the E.H. building on Bard campus with a grey H inside of it. Alongside this, is the text Experimental Humanities Collaborative Network." src="assets/logo.png"/></a>
 		<ul>
 			<li><a href="./about.html">About EHCN→</a></li>
 			<li><a href="./funding.html">Funding Opportunities→</a></li>
 		</ul>
-        <ul class="stick-to-bottom">
-        	<li><a href="mailto:ehcn@opensocietyuniversitynetwork.org">ehcn@opensocietyuniversitynetwork.org</a></li>
-        	<li>EHCN is supported by the <br/><a href="https://opensocietyuniversitynetwork.org/">Open Society University <br/>Network</a></li>
-        	<li><img src="assets/osun.svg"/></li>
-        </ul>
+		<ul class="stick-to-bottom">
+			<li><a aria-label="email E.H.C.N. at ehcn@opensocietyuniversitynetwork.org" href="mailto:ehcn@opensocietyuniversitynetwork.org">ehcn@opensocietyuniversitynetwork.org</a></li>
+			<li><p>EHCN is supported by the <br/><a href="https://opensocietyuniversitynetwork.org/">Open Society University <br/>Network</a></p></li>
+			<li><img alt="O.S.U.N. logo reads Open Society University Network in dark green text with a bright red circle around 'open' " src="assets/osun.svg"/></li>
+		</ul>
+
 	</nav>
 	<main>
 		<section class="primary">
@@ -301,7 +302,7 @@
 
 	</main>
 
-	<div class="marquee__content">
+	<div aria-hidden="true" class="marquee__content">
       <ul class="list-inline">
         <li>This website is currently under construction ⟡ </li>
         <li>This website is currently under construction ⟡ </li>

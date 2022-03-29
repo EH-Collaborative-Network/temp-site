@@ -3,36 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>EHCN -- Site under construction</title>
+	<title>EHCN -- This website is currently under construction</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="mobile-nav">
-		<a class="logo-a" href="./"><img alt="EHCN's logo which resembles the EH building on bard campus" src="assets/logo.png"/></a>
-		<h2 id='mobile-menu-trigger' onclick="showNav(this)"><span></span><span></span><span></span></h2>
-	</div>
-
-
-	<nav>
-		<a class="logo-a" href="./"><img alt="EHCN's logo which resembles the EH building on bard campus" src="assets/logo.png"/></a>
+	<a id="skip-link" href="#main">skip navigation and head to main content</a>
+	<nav role="navigation" id="mobile-nav">
+		<a class="logo-a" href="./"><img alt="EHCN's logo which has an abstracted 'E' in the shape of the E.H. building on Bard campus with a grey H inside of it. Alongside this, is the text Experimental Humanities Collaborative Network." src="assets/logo.png"/></a>
+		<button aria-expanded="false" role="button" aria-label="select to open or close global navigation menu" id='mobile-menu-trigger' onclick="showNav(this)"><span></span><span></span><span></span></button>
+	</nav>
+	<nav role="navigation" id="desktop-nav">
+		<a class="logo-a" href="./"><img alt="EHCN's logo which has an abstracted 'E' in the shape of the E.H. building on Bard campus with a grey H inside of it. Alongside this, is the text Experimental Humanities Collaborative Network." src="assets/logo.png"/></a>
 		<ul>
 			<li><a href="./about.html">About EHCN→</a></li>
 			<li><a href="./funding.html">Funding Opportunities→</a></li>
 		</ul>
-        <ul class="stick-to-bottom">
-        	<li><a href="mailto:ehcn@opensocietyuniversitynetwork.org">ehcn@opensocietyuniversitynetwork.org</a></li>
-        	<li>EHCN is supported by the <br/><a href="https://opensocietyuniversitynetwork.org/">Open Society University <br/>Network</a></li>
-        	<li><img src="assets/osun.svg"/></li>
-        </ul>
-	</nav>
-	<main>
-		<section class="primary">
-		<div class="intro-text">
-			<section><strong>The Experimental Humanities Collaborative Network</strong> is a global network rethinking the humanities in the light of changing technologies, our increasingly connected planet, the ongoing ecological crisis, and the need to create more inclusive institutions.<p><a href="./about.html">Learn more →</a></p></section>
+		<ul class="stick-to-bottom">
+			<li><a aria-label="email E.H.C.N. at ehcn@opensocietyuniversitynetwork.org" href="mailto:ehcn@opensocietyuniversitynetwork.org">ehcn@opensocietyuniversitynetwork.org</a></li>
+			<li><p>EHCN is supported by the <br/><a href="https://opensocietyuniversitynetwork.org/">Open Society University <br/>Network</a></p></li>
+			<li><img alt="O.S.U.N. logo reads Open Society University Network in dark green text with a bright red circle around 'open' " src="assets/osun.svg"/></li>
+		</ul>
 
-			
-		</div>
-		<div class="interactive-map">
+	</nav>
+	<main id="main">
+		<section class="primary">
+		<section class="intro-text">
+			<p><strong>The Experimental Humanities Collaborative Network</strong> is a global network rethinking the humanities in the light of changing technologies, our increasingly connected planet, the ongoing ecological crisis, and the need to create more inclusive institutions.<br><a href="./about.html">Learn more →</a></p>			
+		</section>
+		<section class="interactive-map">
 			<div class="text">
 				<h2>Our partners:</h2>
 				<ul>
@@ -49,18 +47,15 @@
 					<li><a target="_blank" href="https://uniandes.edu.co/">Universidad de los Andes, Colombia→</a></li>
 					<li><a target="_blank" href="http://old.uth.gr/">University of Thessaly, Greece→</a></li>
 				</ul>
-    	</div>
-
-			<div id="interactive-map"></div>
-		</div>
+    		</div>
+			<div aria-label="an interactive map shows a spinning distorted/inverted 3D globe with blue markers showing the location of each partner" id="interactive-map"></div>
 		</section>
-
+		</section>
 		<script type="text/javascript" src="assets/p5.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="map.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="map.js"></script>
 	</main>
-
-	<div class="marquee__content">
+	<div aria-hidden="true" class="marquee__content">
       <ul class="list-inline">
         <li>This website is currently under construction ⟡ </li>
         <li>This website is currently under construction ⟡ </li>
@@ -84,7 +79,5 @@
       </ul>
     </div>
   </div>
-
-
 </body>
 </html>
