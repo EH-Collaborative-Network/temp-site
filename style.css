@@ -669,7 +669,7 @@ button.disabled span::after{
 .opp:hover{
 	background: linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 50%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
 	background: -moz-linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 50%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
-	bckground: -ms-linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 50%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
+	background: -ms-linear-gradient(90deg, rgba(0,130,151,0.1) 0%, rgba(0,130,151,0.1) 50%, rgba(212,234,237,0.9) 99%, rgba(0,130,151,0) 100%);
 }
 .opp h2{
 	position: relative;
@@ -679,15 +679,8 @@ button.disabled span::after{
 	display: inline-block;
 }
 
-.opp > a{
-
-}
 
 .opp sup{
-	vertical-align: top;
-/*	position: absolute;
-	right: 0;
-	top: 0;*/
 	font-size: 20px;
 	display: block;
 	padding: 0;
@@ -698,7 +691,6 @@ button.disabled span::after{
 	background: linear-gradient(90deg, rgba(245,245,245,0.5) 0%, rgba(245,245,245,0.5) 5%, rgba(245,245,245,0.5) 95%, rgba(245,245,245,0) 100%);
 	background: -moz-linear-gradient(90deg, rgba(245,245,245,0.5) 0%, rgba(245,245,245,0.5) 5%, rgba(245,245,245,0.5) 95%, rgba(245,245,245,0) 100%);
 	background: -ms-linear-gradient(90deg, rgba(245,245,245,0.5) 0%, rgba(245,245,245,0.5) 5%, rgba(245,245,245,0.5) 95%, rgba(245,245,245,0) 100%);
-
 }
 .funding-opportunities-wrapper{
 	display: flex;
@@ -819,8 +811,6 @@ section.funding{
 .faq{
 	margin-top: 50px;
 	border-top: 1px;
-/*	column-count: 2;
-	column-gap: 1em;*/
 }
 .faq section{
 	page-break-inside: avoid;
