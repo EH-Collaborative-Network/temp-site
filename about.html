@@ -7,24 +7,25 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="mobile-nav">
-		<a class="logo-a" href="./"><img alt="EHCN's logo which resembles the EH building on bard campus" src="assets/logo.png"/></a>
-		<h2 id='mobile-menu-trigger' onclick="showNav(this)"><span></span><span></span><span></span></h2>
-	</div>
-
-	<nav>
-		<a class="logo-a" href="./"><img alt="EHCN's logo which resembles the EH building on bard campus" src="assets/logo.png"/></a>
+	<a id="skip-link" href="#main">skip navigation and head to main content</a>
+	<nav role="navigation" id="mobile-nav">
+		<a class="logo-a" href="./"><img alt="EHCN's logo which has an abstracted 'E' in the shape of the E.H. building on Bard campus with a grey H inside of it. Alongside this, is the text Experimental Humanities Collaborative Network." src="assets/logo.png"/></a>
+		<button aria-expanded="false" role="button" aria-label="select to open or close global navigation menu" id='mobile-menu-trigger' onclick="showNav(this)"><span></span><span></span><span></span></button>
+	</nav>
+	<nav role="navigation" id="desktop-nav">
+		<a class="logo-a" href="./"><img alt="EHCN's logo which has an abstracted 'E' in the shape of the E.H. building on Bard campus with a grey H inside of it. Alongside this, is the text Experimental Humanities Collaborative Network." src="assets/logo.png"/></a>
 		<ul>
 			<li><a href="./about.html">About EHCN→</a></li>
 			<li><a href="./funding.html">Funding Opportunities→</a></li>
 		</ul>
-        <ul class="stick-to-bottom">
-        	<li><a href="mailto:ehcn@opensocietyuniversitynetwork.org">ehcn@opensocietyuniversitynetwork.org</a></li>
-        	<li>EHCN is supported by the <br/><a href="https://opensocietyuniversitynetwork.org/">Open Society University <br/>Network</a></li>
-        	<li><img src="assets/osun.svg"/></li>
-        </ul>
+		<ul class="stick-to-bottom">
+			<li><a aria-label="email E.H.C.N. at ehcn@opensocietyuniversitynetwork.org" href="mailto:ehcn@opensocietyuniversitynetwork.org">ehcn@opensocietyuniversitynetwork.org</a></li>
+			<li><p>EHCN is supported by the <br/><a href="https://opensocietyuniversitynetwork.org/">Open Society University <br/>Network</a></p></li>
+			<li><img alt="O.S.U.N. logo reads Open Society University Network in dark green text with a bright red circle around 'open' " src="assets/osun.svg"/></li>
+		</ul>
+
 	</nav>
-	<main>
+	<main id="main">
 		<section class="primary">
 		<h1>About EHCN</h1>
 		<div class="two-column">
@@ -54,42 +55,36 @@
 		<div class="steering-committee">
 			<h2>STEERING COMMITTEE</h2>
 			<ul>
-				<!-- Build modal https://docs.google.com/document/d/1w7sk0ek8fCUpF1cZQ3Qo7eN8QhXOpwoBtWoHOEs-AH4/edit include links -->
-				<li onclick="showModal('Krista Caballero')"><a>Krista Caballero→</a></li>
-				<li onclick="showModal('Adhaar Noor Desai')"><a>Adhaar Noor Desai→</a></li>
-				<li onclick="showModal('Saida Hamad')"><a>Saida Hamad→</a></li>
-				<li onclick="showModal('Gwyneira Isaac')"><a>Gwyneira Isaac→</a></li>
-				<li onclick="showModal('Joel McKim')"><a>Joel McKim→</a></li>
-				<li onclick="showModal('Penelope Papailias')"><a>Penelope Papailias→</a></li>
-				<li onclick="showModal('Siarhei Liubimau')"><a>Siarhei Liubimau→</a></li>
-				<li onclick="showModal('Carmina Sanchez-del-Valle')"><a>Carmina Sanchez-del-Valle→</a></li>
-				<li onclick="showModal('Luisa Colón')"><a>Luisa Colón→</a></li>
-				<li onclick="showModal('Dominique Townsend')"><a>Dominique Townsend→</a></li>
-				<li onclick="showModal('Sanjay Kumar')"><a>Sanjay Kumar→</a></li>
-				<li onclick="showModal('Christopher Fort')"><a>Christopher Fort→</a></li>
-				<li onclick="showModal('Janina Schabig')"><a>Janina Schabig→</a></li>
-				<li onclick="showModal('Susan Merriam')"><a>Susan Merriam→</a></li>
-				<li onclick="showModal('Patricia Zalamea')"><a>Patricia Zalamea→</a></li>
+				<li><button role="button" onclick="showModal('Krista Caballero', this)">Krista Caballero→</button></li>
+				<li><button role="button" onclick="showModal('Adhaar Noor Desai', this)">Adhaar Noor Desai→</button></li>
+				<li><button role="button" onclick="showModal('Saida Hamad', this)">Saida Hamad→</button></li>
+				<li><button role="button" onclick="showModal('Gwyneira Isaac', this)">Gwyneira Isaac→</button></li>
+				<li><button role="button" onclick="showModal('Joel McKim', this)">Joel McKim→</button></li>
+				<li><button role="button" onclick="showModal('Penelope Papailias', this)">Penelope Papailias→</button></li>
+				<li><button role="button" onclick="showModal('Siarhei Liubimau', this)">Siarhei Liubimau→</button></li>
+				<li><button role="button" onclick="showModal('Carmina Sanchez-del-Valle', this)">Carmina Sanchez-del-Valle→</button></li>
+				<li><button role="button" onclick="showModal('Luisa Colón', this)">Luisa Colón→</button></li>
+				<li><button role="button" onclick="showModal('Dominique Townsend', this)">Dominique Townsend→</button></li>
+				<li><button role="button" onclick="showModal('Sanjay Kumar', this)">Sanjay Kumar→</button></li>
+				<li><button role="button" onclick="showModal('Christopher Fort', this)">Christopher Fort→</button></li>
+				<li><button role="button" onclick="showModal('Janina Schabig', this)">Janina Schabig→</button></li>
+				<li><button role="button" onclick="showModal('Susan Merriam', this)">Susan Merriam→</button></li>
+				<li><button role="button" onclick="showModal('Patricia Zalamea', this)">Patricia Zalamea→</button></li>
 			</ul>
 		</div>
 
 		<div class="staff">
 			<h2>STAFF</h2>
 			<ul>
-				<li onclick="showModal('Anna Hallett Gutierrez')"><a>Anna Hallett Gutierrez→</a></li>
-				<li onclick="showModal('Luisa Colón')"><a>Luisa Colón→</a></li>
-				<li onclick="showModal('Aarati Akkapeddi')"><a>Aarati Akkapeddi→</a></li>
+				<li><button role="button" onclick="showModal('Anna Hallett Gutierrez', this)">Anna Hallett Gutierrez→</button></li>
+				<li><button role="button" onclick="showModal('Luisa Colón', this)">Luisa Colón→</button></li>
+				<li><button role="button" onclick="showModal('Aarati Akkapeddi', this)">Aarati Akkapeddi→</button></li>
 		
 			</ul>
 		</div>
 		</section>
-			<!-- Build staff section (use eh bios) https://docs.google.com/document/d/1w7sk0ek8fCUpF1cZQ3Qo7eN8QhXOpwoBtWoHOEs-AH4/edit include links -->
-				
-
 	</main>
-
-
-	<div class="marquee__content">
+	<div aria-hidden="true" class="marquee__content">
       <ul class="list-inline">
         <li>This website is currently under construction ⟡ </li>
         <li>This website is currently under construction ⟡ </li>
@@ -113,19 +108,18 @@
       </ul>
     </div>
   </div>
-  <div id="modal">
-  	
+  <div aria-hidden="true" id="modal">
   	<div class="inner">
-  		  <div class="close" onclick="closeModal()">
-  		  	<svg width="30" height="30" viewBox="0 0 54 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect width="73.4602" height="3.45354" rx="1.72677" transform="matrix(0.698084 0.716016 -0.698084 0.716016 2.61719 0)" fill="#333333"/>
-					<rect width="73.4602" height="3.45354" rx="1.72677" transform="matrix(0.698084 0.716016 -0.698084 0.716016 2.61719 0)" stroke="#333333"/>
-					<rect width="73.4602" height="3.52472" rx="1.76236" transform="matrix(0.698084 -0.716016 0.698084 0.716016 0 52.9102)" fill="#333333"/>
-					<rect width="73.4602" height="3.52472" rx="1.76236" transform="matrix(0.698084 -0.716016 0.698084 0.716016 0 52.9102)" stroke="#333333"/>
-					</svg>
-					</div>
-  			<h2></h2>
-  			<div class="body"></div>
+  		<button role="button" aria-label="click to close modal" class="close" onclick="closeModal()">
+			<svg width="30" height="30" viewBox="0 0 54 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect width="73.4602" height="3.45354" rx="1.72677" transform="matrix(0.698084 0.716016 -0.698084 0.716016 2.61719 0)" fill="#333333"/>
+				<rect width="73.4602" height="3.45354" rx="1.72677" transform="matrix(0.698084 0.716016 -0.698084 0.716016 2.61719 0)" stroke="#333333"/>
+				<rect width="73.4602" height="3.52472" rx="1.76236" transform="matrix(0.698084 -0.716016 0.698084 0.716016 0 52.9102)" fill="#333333"/>
+				<rect width="73.4602" height="3.52472" rx="1.76236" transform="matrix(0.698084 -0.716016 0.698084 0.716016 0 52.9102)" stroke="#333333"/>
+			</svg>
+		</button>
+  		<h2></h2>
+  		<section class="body"></section>
   	</div>
   </div>
     <script type="text/javascript" src="main.js"></script>
@@ -149,17 +143,24 @@
     		"Anna Hallett Gutierrez": "coming soon",
     		"Aarati Akkapeddi": "<a target='_blank' href='https://aarati.me'>aarati.me</a><p>Aarati Akkapeddi is a coder, interdisciplinary artist and educator based in Lenapehoking (Brooklyn, NY). They work for The Experimental Humanities Collaborative Network, where they create digital spaces and tools. In their creative practice, they combine archival material, code, machine learning and analog techniques (photography & printmaking) to create artwork about intergenerational/collective memory. Their creative work has been supported by institutions such as Ada X, The Interactive Telecommunications program at NYU, ETOPIA Center for Art & Technology, and LES Printshop. They currently teach creative coding in the Design & Technology department at Parsons.</p>"
     	}
-
-    	function showModal(name){
+		let current;
+    	function showModal(name, prevfocus){
+			current = prevfocus
     		document.querySelector("#modal").classList.add("show")
+			document.querySelector("#modal").ariaHidden = "false"
     		let elem = document.querySelector("#modal h2");
     		let elem2 = document.querySelector("#modal .inner > .body");
     		elem.innerHTML = name
     		elem2.innerHTML = bios[name]
+			document.querySelector("#modal").tabIndex = "0"
+			document.querySelector("#modal").focus()
     	}
 
     	function closeModal(){
     		document.querySelector("#modal").classList.remove("show")
+			document.querySelector("#modal").ariaHidden = "true"
+			document.querySelector("#modal").tabIndex = "-1"
+			current.focus()
     	}
     </script>
 </body>
