@@ -681,6 +681,9 @@ button.disabled span::after{
 	flex-basis:0 ;
 	overflow: hidden;
 }
+.opp.hide a{
+	display: none;
+}
 .opp > a{
 	position: relative;
 	display: inline-block;
