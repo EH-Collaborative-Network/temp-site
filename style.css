@@ -1015,7 +1015,7 @@ section.funding{
     padding: 0px;
     padding-top: -23px;
     margin-left: 13px;
-    display: block;
+    display: none;
     position: sticky;
 	margin-bottom:35px;
   }
@@ -1067,6 +1067,7 @@ section.funding{
 	}
 	.funding-form{
 		width:  calc(100% - 30px);
+		display: none;
 	}
 	
 }
