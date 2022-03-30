@@ -229,6 +229,10 @@ canvas{
 	opacity: 0.8;
 	max-width: 100%;
 }
+#interactive-map{
+  max-height:55vh;
+  overflow:hidden;
+}
 .interactive-map{
 	min-height: 500px;
 	margin-top: 20px;
@@ -259,7 +263,7 @@ canvas{
 	z-index: 1;
 	right: 25px;
 	font-size: 1em;
-	max-width: 50%;
+	max-width: 80%;
 }
 .interactive-map .text a{
 	color: #BF0D3E;
