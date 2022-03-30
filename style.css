@@ -21,6 +21,9 @@ html{
 	background: -ms-linear-gradient(-180deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 35%, rgba(0,130,151,0.5) 100%);
 	background: -moz-linear-gradient(-90deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 35%, rgba(0,130,151,0.5) 100%);
 }
+html#hp{
+	background:rgba(245,245,245,1);
+}
 hr{
 	background: #D4EAED;
 	filter: blur(2px);
