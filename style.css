@@ -230,11 +230,11 @@ canvas{
 	max-width: 100%;
 }
 #interactive-map{
-  max-height:55vh;
+  max-height:60vh;
   overflow:hidden;
 }
 .interactive-map{
-	min-height: 500px;
+	/* min-height: 500px; */
 	margin-top: 20px;
 	/*overflow: hidden;
 	*/
@@ -874,7 +874,7 @@ section.funding{
 /********************************************/
 @media (max-width:1280px){
 	body{
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 	}
 }
 /*************************************/
@@ -988,7 +988,9 @@ section.funding{
 		padding-right: 15px;
 	  word-break: break-all;
 	}
-
+    #interactive-map{
+		max-height:35vh;
+	}
 	nav#desktop-nav .stick-to-bottom img{
 		width: 200px;
 	}
