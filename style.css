@@ -898,28 +898,28 @@ section.funding{
   	width: 100%;
   	z-index: 9;
   }
-  #mobile-nav h2{
+  #mobile-nav button{
   	margin: 15px;
   	margin-bottom: 0;
   }
 
-  #mobile-nav h2 span{
+  #mobile-nav button span{
   	height: 2px;
   	display: block;
   	width: 50px;
   	margin-bottom: 15px;
   	background: #333;
   }
-  #mobile-nav h2.open span:first-child{
+  #mobile-nav button.open span:first-child{
   	transform: rotate(45deg) translateX(8px) translateY(11px);
   }
-  #mobile-nav h2.open span:nth-child(2){
+  #mobile-nav button.open span:nth-child(2){
   	transform: rotate(-45deg) translateX(1px) translateY(-4px);
   }
-  #mobile-nav h2.open span:last-child{
+  #mobile-nav button.open span:last-child{
   	display: none;
   }
-  #mobile-nav h2 span:last-child{
+  #mobile-nav button span:last-child{
   	margin-bottom: 0;
   }
   #mobile-nav .logo-a{
@@ -929,7 +929,9 @@ section.funding{
   #mobile-nav .logo-a img{
   	width:  140px;
   }
-
+  #mobile-nav > button{
+	  background-color: rgba(245,245,245,0);
+  }
   nav#desktop-nav .logo-a{
   	display: none;
   }
