@@ -544,7 +544,7 @@ img.magnifying-glass, img.globe{
 	opacity: 0;
 	transition: 0.5s;
 }
-.secondary a:hover::after, .staaff a:hover::after,.steering-committee button:hover::after, .partners a:hover::after,.opp > a:hover::after{
+.secondary a:hover::after, .staff a:hover::after,.steering-committee button:hover::after, .partners a:hover::after,.opp > a:hover::after{
 	opacity: 1;
 	width: 100%
 }
